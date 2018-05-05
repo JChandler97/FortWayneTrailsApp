@@ -1,0 +1,13 @@
+C:\Users\james\source\repos\Trails\Trails\Trails\bin\Release\netstandard2.0\Trails.deps.json
+C:\Users\james\source\repos\Trails\Trails\Trails\bin\Release\netstandard2.0\Trails.dll
+C:\Users\james\source\repos\Trails\Trails\Trails\bin\Release\netstandard2.0\Trails.pdb
+C:\Users\james\source\repos\Trails\Trails\Trails\obj\Release\netstandard2.0\Trails.csprojResolveAssemblyReference.cache
+C:\Users\james\source\repos\Trails\Trails\Trails\obj\Release\netstandard2.0\Trails.csproj.CoreCompileInputs.cache
+C:\Users\james\source\repos\Trails\Trails\Trails\obj\Release\netstandard2.0\Trails.App.xaml.g.cs
+C:\Users\james\source\repos\Trails\Trails\Trails\obj\Release\netstandard2.0\Trails.MainPage.xaml.g.cs
+C:\Users\james\source\repos\Trails\Trails\Trails\obj\Release\netstandard2.0\Trails.Maps.xaml.g.cs
+C:\Users\james\source\repos\Trails\Trails\Trails\obj\Release\netstandard2.0\Trails.TabbedFormat.xaml.g.cs
+C:\Users\james\source\repos\Trails\Trails\Trails\obj\Release\netstandard2.0\Trails.AssemblyInfoInputs.cache
+C:\Users\james\source\repos\Trails\Trails\Trails\obj\Release\netstandard2.0\Trails.AssemblyInfo.cs
+C:\Users\james\source\repos\Trails\Trails\Trails\obj\Release\netstandard2.0\Trails.dll
+C:\Users\james\source\repos\Trails\Trails\Trails\obj\Release\netstandard2.0\Trails.pdb
