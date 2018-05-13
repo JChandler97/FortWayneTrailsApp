@@ -3,16 +3,20 @@ using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 using MapOverlay;
+using static Trails.App;
 
 namespace Trails
 {
     //[XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Maps : ContentPage
-	{
-		public Maps ()
-		{
-			InitializeComponent ();
-            GetMap();
+    {
+        public Maps()
+        {
+            InitializeComponent();
+            if (DependencyService.Get<INetworkConnection>().IsConnected())
+            {
+                GetMap();
+            }
         }
 
         private async void GetMap()

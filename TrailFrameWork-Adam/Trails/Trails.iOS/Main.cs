@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 using Foundation;
 using UIKit;
+using Xamarin.Forms;
+using static Trails.App;
 
 namespace Trails.iOS
 {

@@ -36,3 +36,5 @@ netstandard
 System.ComponentModel
 System.Reflection.Extensions
 System.Resources.ResourceManager
+Plugin.Connectivity.Abstractions
+Plugin.Connectivity

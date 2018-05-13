@@ -23,9 +23,23 @@ namespace Trails.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
             LoadApplication(new App());
 
-            return base.FinishedLaunching(app, options);
+            bool launch = true;
+
+            try
+            {
+                launch = base.FinishedLaunching(app, options);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.InnerException);
+            }
+
+            return launch;
+            //return true;
         }
     }
 }

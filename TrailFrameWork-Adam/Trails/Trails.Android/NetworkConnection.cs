@@ -12,6 +12,8 @@ using Android.Widget;
 using Android.Net;
 using Trails;
 using Trails.Droid;
+using static Trails.App;
+using Plugin.Connectivity;
 
 [assembly: Xamarin.Forms.Dependency(typeof(NetworkConnection))]
 
@@ -28,6 +30,8 @@ namespace Trails.Droid
                 return true;
             else
                 return false;
+
+            //return CrossConnectivity.Current.IsConnected;
         }
     }
 }

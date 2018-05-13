@@ -26,30 +26,27 @@ namespace Trails.Droid
             string path2 = path + "/" + fileName; // custom folder and file name
             string finalPath = Path.Combine(path1, path2);
 
-            Console.WriteLine(finalPath);
-
             return finalPath;
         }
 
         public string GetPath(string fileName)
         {
             string path1 = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal); // app directory
-            string path2 = fileName; // custom folder and file name
+            string path2 = fileName; // custom file name
             string finalPath = Path.Combine(path1, path2);
-
-            Console.WriteLine(finalPath);
 
             return finalPath;
         }
 
         public void WriteFile(string path, string fileName, string data)
         {
+            //create the directory if it doesn't exist
             if (!Directory.Exists(GetPath(path)))
             {
                 Directory.CreateDirectory(GetPath(path));
             }
 
-            File.WriteAllText(GetPath(path, fileName), data); // writes to local storage
+            File.WriteAllText(GetPath(path, fileName), data);
         }
 
         public string ReadFile(string path, string file, int lineCount)
@@ -82,9 +79,9 @@ namespace Trails.Droid
             }
         }
 
-        public string ReadFile(string path, int lineCount)
+        public string ReadFile(string fileName, int lineCount)
         {
-            StreamReader fileReader = File.OpenText(GetPath(path));
+            StreamReader fileReader = File.OpenText(GetPath(fileName));
 
             if (fileReader == null)
                 return null;

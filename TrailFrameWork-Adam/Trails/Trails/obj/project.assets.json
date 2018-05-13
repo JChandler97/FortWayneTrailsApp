@@ -554,28 +554,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\james\\.nuget\\packages\\": {},
+    "C:\\Users\\adams\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\james\\Downloads\\TrailFrameWork-Adam (1)\\TrailFrameWork-Adam\\Trails\\Trails\\Trails.csproj",
+      "projectUniqueName": "C:\\Users\\adams\\Source\\Repos\\FortWayneTrailsApp\\TrailFrameWork-Adam\\Trails\\Trails\\Trails.csproj",
       "projectName": "Trails",
-      "projectPath": "C:\\Users\\james\\Downloads\\TrailFrameWork-Adam (1)\\TrailFrameWork-Adam\\Trails\\Trails\\Trails.csproj",
-      "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\james\\Downloads\\TrailFrameWork-Adam (1)\\TrailFrameWork-Adam\\Trails\\Trails\\obj\\",
+      "projectPath": "C:\\Users\\adams\\Source\\Repos\\FortWayneTrailsApp\\TrailFrameWork-Adam\\Trails\\Trails\\Trails.csproj",
+      "packagesPath": "C:\\Users\\adams\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\adams\\Source\\Repos\\FortWayneTrailsApp\\TrailFrameWork-Adam\\Trails\\Trails\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\adams\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -600,27 +597,27 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
-          "Xamarin.Forms.Maps": {
-            "target": "Package",
-            "version": "2.4.0.282"
-          },
-          "Xamarin.Forms": {
-            "target": "Package",
-            "version": "2.5.0.280555"
-          },
-          "Xam.Plugin.Geolocator": {
-            "target": "Package",
-            "version": "4.2.0"
-          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.1",
+            "version": "[2.0.1, )",
             "autoReferenced": true
           },
           "Newtonsoft.Json": {
             "target": "Package",
-            "version": "11.0.2"
+            "version": "[11.0.2, )"
+          },
+          "Xam.Plugin.Geolocator": {
+            "target": "Package",
+            "version": "[4.2.0, )"
+          },
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[2.5.0.280555, )"
+          },
+          "Xamarin.Forms.Maps": {
+            "target": "Package",
+            "version": "[2.4.0.282, )"
           }
         },
         "imports": [

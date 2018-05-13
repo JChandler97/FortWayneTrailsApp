@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static Trails.App;
 
 namespace Trails
 {
@@ -13,18 +14,20 @@ namespace Trails
 	public partial class Media : ContentPage
 	{
         HtmlWebViewSource screenView = new HtmlWebViewSource();
-        string code = "file:///android_asset/About_us.html";
+        //string code = "file:///android_asset/About_us.html";
+        string MediaHTML = DependencyService.Get<IFile>().GetAsset("About_us.html");
 
         public Media ()
 		{
 			InitializeComponent();
-            myWebView1.Source = code;
+            screenView.Html = MediaHTML;
+            screenView.BaseUrl = DependencyService.Get<IBaseUrl>().Get();
+            myWebView1.Source = screenView;
 		}
 
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
-            myWebView1.Source = code;
         }
 
         protected override bool OnBackButtonPressed()

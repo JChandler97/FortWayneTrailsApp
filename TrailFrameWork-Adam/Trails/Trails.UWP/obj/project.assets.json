@@ -5321,7 +5321,7 @@
       ]
     },
     "Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
-      "sha512": "2RI4q8FfR0S50V4YdZIZtzfyA2Bo4+jJHQXG+TDN7D4mPrFiIswIq8HVeDWS9xZsDwz23z7d/T2qi4rZa60Sig==",
+      "sha512": "svqEclOg2g3pmsVen1/sCCsozefwISlHQcB/Y5yxqovG6tx+LIxN0XtGH4XSieLbf5PbzVIXmHoPPrWb0QhuaA==",
       "type": "package",
       "path": "microsoft.netcore.universalwindowsplatform/6.0.1",
       "files": [
@@ -7178,18 +7178,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\james\\.nuget\\packages\\": {},
+    "C:\\Users\\adams\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\james\\Downloads\\TrailFrameWork-Adam (1)\\TrailFrameWork-Adam\\Trails\\Trails.UWP\\Trails.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\adams\\Source\\Repos\\FortWayneTrailsApp\\TrailFrameWork-Adam\\Trails\\Trails.UWP\\Trails.UWP.csproj",
       "projectName": "Trails.UWP",
-      "projectPath": "C:\\Users\\james\\Downloads\\TrailFrameWork-Adam (1)\\TrailFrameWork-Adam\\Trails\\Trails.UWP\\Trails.UWP.csproj",
-      "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\james\\Downloads\\TrailFrameWork-Adam (1)\\TrailFrameWork-Adam\\Trails\\Trails.UWP\\obj\\",
+      "projectPath": "C:\\Users\\adams\\Source\\Repos\\FortWayneTrailsApp\\TrailFrameWork-Adam\\Trails\\Trails.UWP\\Trails.UWP.csproj",
+      "packagesPath": "C:\\Users\\adams\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\adams\\Source\\Repos\\FortWayneTrailsApp\\TrailFrameWork-Adam\\Trails\\Trails.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -7197,7 +7197,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\adams\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -7211,8 +7211,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\james\\Downloads\\TrailFrameWork-Adam (1)\\TrailFrameWork-Adam\\Trails\\Trails\\Trails.csproj": {
-              "projectPath": "C:\\Users\\james\\Downloads\\TrailFrameWork-Adam (1)\\TrailFrameWork-Adam\\Trails\\Trails\\Trails.csproj"
+            "C:\\Users\\adams\\Source\\Repos\\FortWayneTrailsApp\\TrailFrameWork-Adam\\Trails\\Trails\\Trails.csproj": {
+              "projectPath": "C:\\Users\\adams\\Source\\Repos\\FortWayneTrailsApp\\TrailFrameWork-Adam\\Trails\\Trails\\Trails.csproj"
             }
           }
         }

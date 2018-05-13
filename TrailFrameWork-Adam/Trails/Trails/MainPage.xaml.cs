@@ -11,13 +11,13 @@ using static Trails.App;
 using System.Net.Http;
 using System.Globalization;
 using Newtonsoft.Json;
-using Java.IO;
-using Android.Content.Res;
+//using Java.IO;
+//using Android.Content.Res;
 
 namespace Trails
 {
-	public partial class MainPage : ContentPage
-	{
+    public partial class MainPage : ContentPage
+    {
         private RootObject JSONData;
         private string UpdateTime;
 
@@ -33,11 +33,11 @@ namespace Trails
 
         HtmlWebViewSource screenView = new HtmlWebViewSource();
         HtmlWebViewSource nextPage = new HtmlWebViewSource();
-        string code;
+        string NewsHTML;
 
         public MainPage()
-		{
-			InitializeComponent();
+        {
+            InitializeComponent();
 
             if (LiveMode == true)
             {
@@ -78,11 +78,11 @@ namespace Trails
             }
             */
 
-            code = DependencyService.Get<IFile>().GetAsset("index.html");
+            NewsHTML = DependencyService.Get<IFile>().GetAsset("index.html");
 
-            code = code.Replace("Main Page", "News");
+            NewsHTML = NewsHTML.Replace("Main Page", "News");
 
-            nextPage.Html = code;
+            nextPage.Html = NewsHTML;
         }
 
         async void GetJSON()
@@ -90,7 +90,7 @@ namespace Trails
             var client = new HttpClient();
 
             bool DownloadJSON = false;
-            string JSONDataRaw;
+            string JSONDataRaw = "";
 
             string UpdateFolder = "data";
             string UpdateFile = "update.txt";
@@ -125,8 +125,10 @@ namespace Trails
 
                     if (DateTime.Compare(NewUpdateTime, StoredUpdateTime) > 0) //if JSON is outdated
                     {
-                        //write new date to file and update JSON
+                        //write new date to file
                         DependencyService.Get<IFile>().WriteFile(UpdateFolder, UpdateFile, UpdateTime);
+
+                        //update JSON
                         DownloadJSON = true;
                     }
                     else
@@ -153,7 +155,10 @@ namespace Trails
             else
             {
                 //read cached JSON
-                JSONDataRaw = DependencyService.Get<IFile>().ReadFile(UpdateFolder, SiteContentsFile);
+                if (DependencyService.Get<IFile>().FileExists(UpdateFolder, SiteContentsFile))
+                {
+                    JSONDataRaw = DependencyService.Get<IFile>().ReadFile(UpdateFolder, SiteContentsFile);
+                }
             }
 
             JSONData = JsonConvert.DeserializeObject<RootObject>(JSONDataRaw);
@@ -161,20 +166,32 @@ namespace Trails
             //DependencyService.Get<IFile>().SaveImage(UpdateFolder, "image.jpg", "http://fwt.codechameleon.com/wp-content/uploads/2018/03/100-Miles-of-Trails-Event-42.jpg");
 
             string HTMLBody = "";
-
-            foreach (var post in JSONData.contents.news)
+            
+            if (JSONData != null)
             {
-                HTMLBody += "<h1>" + post.name + "</h1>";
-                //HTMLBody += "<h3>" + post.slug + "</h3>";
-                //HTMLBody += "<h6>" + post.coverImage + "</h6>";
-                HTMLBody += "<p>" + post.summary + "</p>";
-                HTMLBody += "<p>" + post.body + "</p>";
-                HTMLBody += "<br />";
+                foreach (var post in JSONData.contents.news)
+                {
+                    HTMLBody += "<h1>" + post.name + "</h1>";
+                    //HTMLBody += "<h3>" + post.slug + "</h3>";
+                    //HTMLBody += "<h6>" + post.coverImage + "</h6>";
+                    HTMLBody += "<p>" + post.summary + "</p>";
+                    HTMLBody += "<p>" + post.body + "</p>";
+                    HTMLBody += "<br />";
+                }
             }
 
-            code = code.Replace("<h1>Loading...</h1>", HTMLBody);
+            if (HTMLBody == "")
+            {
+                NewsHTML = NewsHTML.Replace("<h1>Loading...</h1>", "<h1 style=\"padding: 30vw 0\">No connection. <br> Please try again later.</h1>");
+            }
+            else
+            {
+                NewsHTML = NewsHTML.Replace("<h1>Loading...</h1>", HTMLBody);
+            }
+            
 
-            screenView.Html = code;
+            screenView.Html = NewsHTML;
+            screenView.BaseUrl = DependencyService.Get<IBaseUrl>().Get();
 
             myWebView.Source = screenView;
         }

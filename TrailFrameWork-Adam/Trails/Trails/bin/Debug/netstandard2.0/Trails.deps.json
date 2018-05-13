@@ -13,8 +13,7 @@
           "Newtonsoft.Json": "11.0.2",
           "Xam.Plugin.Geolocator": "4.2.0",
           "Xamarin.Forms": "2.5.0.280555",
-          "Xamarin.Forms.Maps": "2.4.0.282",
-          "Mono.Android": "0.0.0.0"
+          "Xamarin.Forms.Maps": "2.4.0.282"
         },
         "runtime": {
           "Trails.dll": {}
@@ -54,11 +53,6 @@
         "runtime": {
           "lib/netstandard1.0/Xamarin.Forms.Maps.Design.dll": {},
           "lib/netstandard1.0/Xamarin.Forms.Maps.dll": {}
-        }
-      },
-      "Mono.Android/0.0.0.0": {
-        "runtime": {
-          "Mono.Android.dll": {}
         }
       }
     }
@@ -110,11 +104,6 @@
       "sha512": "sha512-XGk0rHBl1XKQoYOeNW0HW75vTZPZNqRqM2sYqkjkno/mZwGCXnDaqDB2sBDv9zc64Apk9BHfXFBNdeBT8M/hpA==",
       "path": "xamarin.forms.maps/2.4.0.282",
       "hashPath": "xamarin.forms.maps.2.4.0.282.nupkg.sha512"
-    },
-    "Mono.Android/0.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }

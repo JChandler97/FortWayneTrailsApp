@@ -11,8 +11,8 @@
 namespace Trails {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\james\\Downloads\\TrailFrameWork-Adam (1)\\TrailFrameWork-Adam\\Trails\\Trail" +
-        "s\\MainPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\adams\\Source\\Repos\\FortWayneTrailsApp\\TrailFrameWork-Adam\\Trails\\Trails\\" +
+        "MainPage.xaml")]
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

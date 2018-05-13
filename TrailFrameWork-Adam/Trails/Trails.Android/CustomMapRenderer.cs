@@ -4,7 +4,6 @@ using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 using Xamarin.Forms.Maps.Android;
 using System;
-using Trails.Droid;
 using MapOverlay;
 using MapOverlay.Droid;
 
