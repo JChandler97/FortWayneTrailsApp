@@ -21,7 +21,7 @@ namespace Trails
 		{
 			InitializeComponent();
             screenView.Html = MediaHTML;
-            screenView.BaseUrl = DependencyService.Get<IBaseUrl>().Get();
+            //screenView.BaseUrl = DependencyService.Get<IBaseUrl>().Get();
             myWebView1.Source = screenView;
 		}
 

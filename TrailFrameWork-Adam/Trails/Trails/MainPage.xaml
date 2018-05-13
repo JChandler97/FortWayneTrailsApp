@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:Trails"
              x:Class="Trails.MainPage"
              Title="News"
-             Icon="icon-news@2x.png">
+             Icon="">
 
     <ContentPage.Content>
         <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">

@@ -11,8 +11,8 @@
 namespace Trails {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\james\\Downloads\\TrailFrameWork-Adam (1)\\TrailFrameWork-Adam\\Trails\\Trail" +
-        "s\\TabbedFormat.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\adams\\Source\\Repos\\FortWayneTrailsApp\\TrailFrameWork-Adam\\Trails\\Trails\\" +
+        "TabbedFormat.xaml")]
     public partial class TabbedFormat : global::Xamarin.Forms.TabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

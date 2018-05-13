@@ -49,7 +49,6 @@ C:\Users\james\Downloads\TrailFrameWork-Adam (1)\TrailFrameWork-Adam\Trails\Trai
 C:\Users\adams\Source\Repos\FortWayneTrailsApp\TrailFrameWork-Adam\Trails\Trails\bin\Debug\netstandard2.0\Trails.deps.json
 C:\Users\adams\Source\Repos\FortWayneTrailsApp\TrailFrameWork-Adam\Trails\Trails\bin\Debug\netstandard2.0\Trails.dll
 C:\Users\adams\Source\Repos\FortWayneTrailsApp\TrailFrameWork-Adam\Trails\Trails\bin\Debug\netstandard2.0\Trails.pdb
-C:\Users\adams\Source\Repos\FortWayneTrailsApp\TrailFrameWork-Adam\Trails\Trails\obj\Debug\netstandard2.0\Trails.csprojResolveAssemblyReference.cache
 C:\Users\adams\Source\Repos\FortWayneTrailsApp\TrailFrameWork-Adam\Trails\Trails\obj\Debug\netstandard2.0\Trails.csproj.CoreCompileInputs.cache
 C:\Users\adams\Source\Repos\FortWayneTrailsApp\TrailFrameWork-Adam\Trails\Trails\obj\Debug\netstandard2.0\Trails.App.xaml.g.cs
 C:\Users\adams\Source\Repos\FortWayneTrailsApp\TrailFrameWork-Adam\Trails\Trails\obj\Debug\netstandard2.0\Trails.MainPage.xaml.g.cs
@@ -60,3 +59,4 @@ C:\Users\adams\Source\Repos\FortWayneTrailsApp\TrailFrameWork-Adam\Trails\Trails
 C:\Users\adams\Source\Repos\FortWayneTrailsApp\TrailFrameWork-Adam\Trails\Trails\obj\Debug\netstandard2.0\Trails.AssemblyInfo.cs
 C:\Users\adams\Source\Repos\FortWayneTrailsApp\TrailFrameWork-Adam\Trails\Trails\obj\Debug\netstandard2.0\Trails.dll
 C:\Users\adams\Source\Repos\FortWayneTrailsApp\TrailFrameWork-Adam\Trails\Trails\obj\Debug\netstandard2.0\Trails.pdb
+C:\Users\adams\Source\Repos\FortWayneTrailsApp\TrailFrameWork-Adam\Trails\Trails\obj\Debug\netstandard2.0\Trails.csprojResolveAssemblyReference.cache

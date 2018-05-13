@@ -123,7 +123,7 @@ namespace Trails
                     StoredUpdateTimeRaw = DependencyService.Get<IFile>().ReadFile(UpdateFilePath, 1);
                     StoredUpdateTime = DateTime.ParseExact(StoredUpdateTimeRaw, UpdateTimeFormat, provider);
 
-                    if (DateTime.Compare(NewUpdateTime, StoredUpdateTime) > 0) //if JSON is outdated
+                    if (DateTime.Compare(NewUpdateTime, StoredUpdateTime) >= 0) //if JSON is outdated
                     {
                         //write new date to file
                         DependencyService.Get<IFile>().WriteFile(UpdateFolder, UpdateFile, UpdateTime);
@@ -191,7 +191,7 @@ namespace Trails
             
 
             screenView.Html = NewsHTML;
-            screenView.BaseUrl = DependencyService.Get<IBaseUrl>().Get();
+            //screenView.BaseUrl = DependencyService.Get<IBaseUrl>().Get();
 
             myWebView.Source = screenView;
         }

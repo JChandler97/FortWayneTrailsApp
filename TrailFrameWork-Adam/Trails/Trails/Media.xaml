@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Trails.Media"
              Title="Media"
-             Icon="icon-page@2x.png">
+             Icon="">
     <ContentPage.Content>
         <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <WebView x:Name="myWebView1" WidthRequest="1000" HeightRequest="1000"/>

@@ -1,5 +1,7 @@
 FormsViewGroup
 Newtonsoft.Json
+Plugin.Connectivity.Abstractions
+Plugin.Connectivity
 Plugin.CurrentActivity
 Plugin.Geolocator.Abstractions
 Plugin.Geolocator
@@ -36,5 +38,3 @@ netstandard
 System.ComponentModel
 System.Reflection.Extensions
 System.Resources.ResourceManager
-Plugin.Connectivity.Abstractions
-Plugin.Connectivity
